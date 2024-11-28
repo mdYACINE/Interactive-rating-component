@@ -1,0 +1,153 @@
+
+/* - White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    color:hsl(217, 12%, 63%);
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background: linear-gradient(hsl(212, 22%, 14%),hsl(218, 33%, 14%));
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.star{
+    width: 17px;
+    background-color: #262e38;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    margin-top: 25px;
+}
+p{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 18px 0;
+}
+.rates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+}
+.rate{
+    background-color: #262e38;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+button{
+    width: 100%;
+    background-color: #ff7b00;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.rate:hover{
+    background-color: #ff7b00;
+}
+button:hover{
+    background-color: #fff;
+}
+.box2{
+    background: linear-gradient(hsl(212, 22%, 14%),hsl(218, 33%, 14%));
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.thank{
+    width: 160px;
+    margin-top: 20px;
+}
+.text1{
+    color: #ff7b00;
+    background-color: #262e38;
+    padding: 4px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.text2{
+    text-align: center;
+    padding: 0 6px;
+}
+
+.hide{
+    display: none;
+}
+.color {
+    background-color: rgb(196, 194, 190);
+    color: #262e38;
+  }
+
+  @media(max-width: 445px){
+    .box,.box2{
+       width: 280px;
+       height: 320px;
+       padding: 25px;
+
+    }
+    .star{
+        padding: 12px;
+        margin: 0;
+    }
+    p{
+        font-size: 14px;
+        margin: 12px 0;
+      
+    }
+    h2{
+        color: hsl(0, 0%, 100%);
+    }
+    .rates{
+        margin-top: 10px;
+    }
+    .rate{
+        width: 45px;
+        height: 45px;
+    }
+    button{
+        margin-top: 25px;
+    }
+    .thank{
+        width: 145px;
+        margin-top: 20px;
+    }
+    .thank-you{
+        margin-top: 15px;
+    }
+  }
